@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUNA - The Ultimate Nutrition App</title>
+    <meta name="description" content="Track every micronutrient in your diet with unprecedented precision. Go beyond calories and macros.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Beehiiv Script -->
+    <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L13.09 8.26L20 9L13.09 15.74L12 22L10.91 15.74L4 9L10.91 8.26L12 2Z" stroke="#01B2BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>TUNA</span>
+            </a>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="nutrition-backdrop">
+                <div class="nutrient-item" style="top: 10%; left: 10%; transform: rotate(12deg);">Vitamin C<br>120mg</div>
+                <div class="nutrient-item" style="top: 20%; right: 20%; transform: rotate(-12deg);">Protein<br>25.4g</div>
+                <div class="nutrient-item" style="bottom: 32%; left: 20%; transform: rotate(12deg);">Iron<br>8.2mg</div>
+                <div class="nutrient-item" style="bottom: 20%; right: 32%; transform: rotate(-12deg);">Calcium<br>150mg</div>
+                <div class="nutrient-item" style="top: 50%; left: 25%;">Fiber<br>12.8g</div>
+                <div class="nutrient-item" style="top: 33%; right: 33%; transform: rotate(-12deg);">Omega-3<br>2.1g</div>
+                <div class="nutrient-item" style="bottom: 33%; left: 50%; transform: rotate(12deg);">Folate<br>85mcg</div>
+                <div class="nutrient-item" style="top: 25%; left: 33%; transform: rotate(-12deg);">Magnesium<br>42mg</div>
+            </div>
+            <div class="gradient-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>TUNA: The Ultimate Nutrition App</h1>
+                    <p>Revolutionary AI-powered nutrition tracking with camera logging, DNA analysis, and precision nutrient profiling.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            Get Started
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <img src="tuna-app-screenshot.png" alt="TUNA App Interface" class="app-screenshot">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Revolutionary Features</h2>
+                    <p>TUNA combines cutting-edge AI, genetic science, and precision nutrition for personalized health optimization</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                <circle cx="12" cy="13" r="4"/>
+                            </svg>
+                        </div>
+                        <h3>Meal Camera Logging with AI Analysis</h3>
+                        <p>Simply snap a photo of your meal and let our AI instantly analyze and log every nutrient</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <h3>Nutrient Interactions Engine</h3>
+                        <p>Advanced analysis of how nutrients interact, compete, and enhance each other in your body</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3>DNA-Based Recommendations</h3>
+                        <p>Optional genetic analysis provides personalized nutrition recommendations based on your unique DNA</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <h3>Fasting & Meal Timing Optimization</h3>
+                        <p>Optimize when you eat for maximum nutrient absorption and metabolic benefits</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h3>Week-by-Week Pregnancy Guidance</h3>
+                        <p>Specialized nutrition tracking and recommendations for every stage of pregnancy</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                        </div>
+                        <h3>Precision Nutrient Profiles</h3>
+                        <p>Detailed analysis of 150+ nutrients with precision tracking down to the microgram</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote 1 -->
+        <section class="quote quote-1">
+            <div class="container">
+                <blockquote>
+                    <p>Your body isn't random. TUNA finds the pattern.</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <div class="how-it-works-content">
+                    <div class="how-it-works-text">
+                        <h2>How TUNA Works</h2>
+                        <p>Experience the future of nutrition tracking with AI-powered analysis and personalized insights</p>
+                        <div class="steps">
+                            <div class="step">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22,4 12,14.01 9,11.01"/>
+                                </svg>
+                                <div>
+                                    <h3>Snap & Analyze</h3>
+                                    <p>Take a photo of your meal and our AI instantly identifies and logs all nutrients</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22,4 12,14.01 9,11.01"/>
+                                </svg>
+                                <div>
+                                    <h3>Personalized Insights</h3>
+                                    <p>Get recommendations based on your DNA, health goals, and nutrient interactions</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22,4 12,14.01 9,11.01"/>
+                                </svg>
+                                <div>
+                                    <h3>Optimize & Thrive</h3>
+                                    <p>Fine-tune your nutrition timing and choices for optimal health outcomes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="how-it-works-image">
+                        <div class="phone-mockup">
+                            <img src="tuna-app-screenshot.png" alt="TUNA App Interface" class="app-screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote 2 -->
+        <section class="quote quote-2">
+            <div class="container">
+                <blockquote>
+                    <p>You don't have 'bad genes' — you have a manual. We help you read it.</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Pricing Plans</h2>
+                    <p>Choose the plan that fits your nutritional journey</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Essential</h3>
+                        <div class="price">$9.99<span>/month</span></div>
+                        <ul class="features-list">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>AI Camera Meal Logging</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Track 100+ essential nutrients</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Basic nutrient interactions</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Weekly reports</li>
+                        </ul>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Popular</div>
+                        <h3>Pro</h3>
+                        <div class="price">$19.99<span>/month</span></div>
+                        <ul class="features-list">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Everything in Essential</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Advanced Nutrient Interactions Engine</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Fasting & Meal Timing Optimization</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Precision Nutrient Profiles (150+ nutrients)</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Daily AI insights</li>
+                        </ul>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Ultimate</h3>
+                        <div class="price">$29.99<span>/month</span></div>
+                        <ul class="features-list">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Everything in Pro</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>DNA-Based Recommendations</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Week-by-Week Pregnancy Guidance</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Priority AI analysis</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>Personal nutrition consultant access</li>
+                        </ul>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote 3 -->
+        <section class="quote quote-3">
+            <div class="container">
+                <blockquote>
+                    <p>Your meals are chemical equations. TUNA balances them.</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <h2>Stay Updated with TUNA</h2>
+                    <p>Get the latest nutrition insights, feature updates, and exclusive early access to new TUNA capabilities.</p>
+                    
+                    <!-- Beehiiv Form -->
+                    <div class="newsletter-form">
+                        <iframe 
+                            src="https://subscribe-forms.beehiiv.com/44b20552-85da-46b2-bb30-79b70a1f63ab" 
+                            class="beehiiv-embed" 
+                            data-test-id="beehiiv-embed" 
+                            frameborder="0" 
+                            scrolling="no">
+                        </iframe>
+                    </div>
+                    
+                    <div class="newsletter-disclaimer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22,4 12,14.01 9,11.01"/>
+                        </svg>
+                        <span>No spam, unsubscribe anytime</span>
+                    </div>
+                    
+                    <div class="newsletter-benefits">
+                        <div class="benefit">
+                            <div class="benefit-title">Early Access</div>
+                            <div class="benefit-subtitle">Beta Features</div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-title">50% Off</div>
+                            <div class="benefit-subtitle">Launch Pricing</div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-title">Priority</div>
+                            <div class="benefit-subtitle">Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Nutrition?</h2>
+                    <p>Join thousands of users who have discovered the power of AI-driven precision nutrition tracking</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary">
+                            Download TUNA Now
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn-outline">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 TUNA. All rights reserved.</p>
+                <nav class="footer-nav">
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="medical-disclaimer.html">Medical Disclaimer</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
