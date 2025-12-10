@@ -479,6 +479,54 @@ body {
   background: #040440;
 }
 
+.stats-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.stats-image {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: statsImageFade 8s ease-in-out infinite;
+}
+
+.stats-image-1 {
+  animation-delay: 0s;
+  position: relative;
+  display: block;
+}
+
+.stats-image-2 {
+  animation-delay: 4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes statsImageFade {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  45% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
 /* The Feed & Social Features */
 .the-feed {
   padding: 6rem 0;
