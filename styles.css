@@ -258,6 +258,82 @@ body {
   margin: 0 auto;
 }
 
+.section-subtitle {
+  font-size: 1.25rem;
+  color: #01b2bf;
+  font-weight: 500;
+}
+
+/* Content with Image Layout */
+.content-with-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.content-with-image.reverse {
+  direction: rtl;
+}
+
+.content-with-image.reverse > * {
+  direction: ltr;
+}
+
+.content-text {
+  max-width: 600px;
+}
+
+.lead-text {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.content-text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.feature-list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.feature-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #01b2bf;
+  font-weight: bold;
+}
+
+.closing-text {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  font-style: italic;
+  margin-top: 1.5rem;
+}
+
+.section-footer {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #d1d5db;
+  margin-top: 3rem;
+  line-height: 1.8;
+}
+
 /* Features Section */
 .features {
   padding: 6rem 0;
@@ -317,12 +393,95 @@ body {
   background: linear-gradient(90deg, #030330 0%, #040440 50%, #030330 100%);
 }
 
+.quote-4 {
+  background: linear-gradient(-90deg, #030330 0%, #040440 50%, #030330 100%);
+}
+
 .quote blockquote p {
   font-size: clamp(1.5rem, 4vw, 3rem);
   font-weight: 700;
   line-height: 1.2;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+/* What Makes TUNA Different */
+.what-makes-different {
+  padding: 6rem 0;
+  background: #040440;
+}
+
+/* How Logging Works */
+.how-logging-works {
+  padding: 6rem 0;
+}
+
+.logging-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.logging-method {
+  text-align: center;
+}
+
+.method-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.logging-method h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.logging-method p {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.method-image {
+  margin-top: 1.5rem;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Nutrient Intelligence Engine */
+.nutrient-intelligence {
+  padding: 6rem 0;
+}
+
+/* Built for Real Life */
+.built-for-life {
+  padding: 6rem 0;
+  background: #040440;
+}
+
+/* For Athletes, Biohackers & Longevity */
+.for-athletes {
+  padding: 6rem 0;
+}
+
+/* Daily Stats & Profile */
+.daily-stats {
+  padding: 6rem 0;
+  background: #040440;
+}
+
+/* The Feed & Social Features */
+.the-feed {
+  padding: 6rem 0;
 }
 
 /* How It Works */
@@ -552,27 +711,75 @@ body {
   color: #d1d5db;
 }
 
-/* CTA */
-.cta {
+/* Join Beta */
+.join-beta {
   padding: 6rem 0;
+  background: #040440;
 }
 
-.cta-content {
+.join-beta-content {
   text-align: center;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
-.cta-content h2 {
+.join-beta-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: rgba(1, 178, 191, 0.2);
+  color: #01b2bf;
+  border-radius: 50%;
+  margin: 0 auto 2rem;
+}
+
+.join-beta-content h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.cta-content p {
+.join-beta-content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.join-beta-content .lead-text {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  margin-bottom: 2rem;
+}
+
+.join-beta-content > p {
   font-size: 1.125rem;
   color: #d1d5db;
   margin-bottom: 2rem;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0;
+  color: #9ca3af;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #374151;
+}
+
+.divider span {
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .cta-buttons {
@@ -580,6 +787,7 @@ body {
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 3rem;
 }
 
 /* Footer */
@@ -648,9 +856,27 @@ body {
     order: 1;
   }
 
+  .content-with-image {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .content-with-image.reverse {
+    direction: ltr;
+  }
+
+  .content-text {
+    max-width: 100%;
+  }
+
   .how-it-works-content {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .logging-methods {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .phone-mockup {
