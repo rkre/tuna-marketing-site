@@ -411,6 +411,31 @@ body {
   background: #040440;
 }
 
+.different-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.different-image {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: statsImageFade 8s ease-in-out infinite;
+}
+
+.different-image-1 {
+  animation-delay: 0s;
+  position: relative;
+  display: block;
+}
+
+.different-image-2 {
+  animation-delay: 4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* How Logging Works */
 .how-logging-works {
   padding: 6rem 0;
@@ -441,20 +466,7 @@ body {
 
 .logging-method p {
   color: #d1d5db;
-  margin-bottom: 1.5rem;
   line-height: 1.6;
-}
-
-.method-image {
-  margin-top: 1.5rem;
-}
-
-.feature-image {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Nutrient Intelligence Engine */
@@ -462,10 +474,60 @@ body {
   padding: 6rem 0;
 }
 
+.engine-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.engine-image {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: statsImageFade 8s ease-in-out infinite;
+}
+
+.engine-image-1 {
+  animation-delay: 0s;
+  position: relative;
+  display: block;
+}
+
+.engine-image-2 {
+  animation-delay: 4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* Built for Real Life */
 .built-for-life {
   padding: 6rem 0;
   background: #040440;
+}
+
+.life-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.life-image {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: statsImageFade 8s ease-in-out infinite;
+}
+
+.life-image-1 {
+  animation-delay: 0s;
+  position: relative;
+  display: block;
+}
+
+.life-image-2 {
+  animation-delay: 4s;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* For Athletes, Biohackers & Longevity */
