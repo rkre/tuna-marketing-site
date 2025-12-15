@@ -908,6 +908,76 @@ body {
   margin-bottom: 3rem;
 }
 
+.platform-buttons {
+  gap: 1.5rem;
+}
+
+.btn-platform {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+  min-width: 200px;
+}
+
+.btn-platform svg {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-platform span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.btn-platform small {
+  font-size: 0.75rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.btn-platform strong {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.btn-ios {
+  background: #000000;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-ios:hover {
+  background: #1a1a1a;
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.btn-android {
+  background: #2a2a3e;
+  color: #6b7280;
+  border: 1px solid #374151;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-android:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 /* Footer */
 .footer {
   border-top: 1px solid #374151;
@@ -1019,6 +1089,16 @@ body {
 
   .hero-buttons {
     justify-content: center;
+  }
+
+  .platform-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-platform {
+    width: 100%;
+    max-width: 280px;
   }
 }
 
