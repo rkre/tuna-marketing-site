@@ -1,0 +1,33 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "pecorino-ed438",
+          "appId": "1:168810500752:android:06d6a72afdc20cfb467e15",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "pecorino-ed438",
+          "configurations": {
+            "android": "1:168810500752:android:06d6a72afdc20cfb467e15",
+            "ios": "1:168810500752:ios:0667d99ffe44174d467e15",
+            "macos": "1:168810500752:ios:0667d99ffe44174d467e15",
+            "web": "1:168810500752:web:1a973e446af23e50467e15",
+            "windows": "1:168810500752:web:3d776f8a7cec555a467e15"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
