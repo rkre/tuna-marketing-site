@@ -600,6 +600,25 @@ body {
   padding: 6rem 0;
 }
 
+/* Account Deletion Section */
+.account-deletion-section {
+  padding-top: calc(64px + 3rem); /* Compensate for fixed header + extra space */
+  padding-bottom: 6rem;
+}
+
+.account-deletion-section h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.account-deletion-section p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
 /* How It Works */
 .how-it-works {
   padding: 6rem 0;
