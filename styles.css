@@ -678,6 +678,154 @@ body {
   background: #040440;
 }
 
+.tester-free-banner {
+  position: relative;
+  max-width: 880px;
+  margin: 0 auto 4rem;
+  padding: 2.5rem 2rem;
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(61, 220, 132, 0.22), transparent 55%),
+    radial-gradient(120% 140% at 100% 100%, rgba(1, 178, 191, 0.18), transparent 60%),
+    linear-gradient(180deg, rgba(3, 3, 48, 0.85), rgba(3, 3, 48, 0.95));
+  border: 1px solid rgba(61, 220, 132, 0.55);
+  border-radius: 1rem;
+  box-shadow:
+    0 0 0 1px rgba(61, 220, 132, 0.08),
+    0 24px 60px rgba(0, 0, 0, 0.4),
+    0 0 80px rgba(61, 220, 132, 0.12);
+  overflow: hidden;
+}
+
+.tester-free-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(61, 220, 132, 0.06), transparent);
+  pointer-events: none;
+}
+
+.tester-free-banner-main {
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.tester-free-label,
+.pricing-badge,
+.join-free-pill {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 9999px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tester-free-label {
+  padding: 0.5rem 0.85rem;
+  color: #86efac;
+  background: rgba(61, 220, 132, 0.16);
+  border: 1px solid rgba(61, 220, 132, 0.4);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.tester-free-banner strong {
+  color: white;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-shadow: 0 0 40px rgba(61, 220, 132, 0.25);
+}
+
+.tester-free-tagline {
+  color: #e5e7eb;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  max-width: 540px;
+  margin: 0;
+}
+
+.tester-free-perks {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  margin: 0.5rem 0 0.25rem;
+  padding: 0;
+}
+
+.tester-free-perks li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #d1d5db;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.tester-free-perks svg {
+  color: #3ddc84;
+  flex-shrink: 0;
+}
+
+.tester-free-cta {
+  margin-top: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.0625rem;
+  background: #3ddc84;
+  color: #040440;
+  border: none;
+  box-shadow: 0 8px 24px rgba(61, 220, 132, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tester-free-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(61, 220, 132, 0.5);
+  background: #86efac;
+}
+
+.tester-free-meta {
+  color: #9ca3af;
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+}
+
+.support-tiers-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2rem;
+}
+
+.support-tiers-eyebrow {
+  display: inline-block;
+  color: #9ca3af;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+}
+
+.support-tiers-header h3 {
+  color: #e5e7eb;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.support-tiers-header p {
+  color: #9ca3af;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -687,28 +835,73 @@ body {
 }
 
 .pricing-card {
-  background: #030330;
-  border: 1px solid #374151;
+  background: rgba(3, 3, 48, 0.5);
+  border: 1px solid rgba(55, 65, 81, 0.6);
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 1.75rem;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   display: flex;
   flex-direction: column;
+  opacity: 0.78;
+}
+
+.pricing-badge {
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.6rem;
+  color: #9ca3af;
+  background: rgba(156, 163, 175, 0.08);
+  border: 1px solid rgba(156, 163, 175, 0.18);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.pricing-badge-free {
+  color: #86efac;
+  background: rgba(61, 220, 132, 0.14);
+  border-color: rgba(61, 220, 132, 0.3);
+}
+
+.pricing-card-support h3 {
+  color: #d1d5db;
+}
+
+.pricing-card-support .price {
+  color: #e5e7eb;
 }
 
 .pricing-card:hover {
-  transform: scale(1.05) translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  border-color: rgba(1, 178, 191, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
 }
 
 .pricing-card.popular {
-  border-color: #01b2bf;
-  box-shadow: 0 0 0 2px #01b2bf;
+  /* Intentionally neutralized — free tester tier is the primary CTA */
 }
 
-.pricing-card.popular:hover {
-  box-shadow: 0 20px 40px rgba(1, 178, 191, 0.2);
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  background: transparent;
+  color: #d1d5db;
+  border: 1px solid rgba(156, 163, 175, 0.3);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-ghost:hover {
+  color: #3ddc84;
+  border-color: rgba(61, 220, 132, 0.5);
+  background: rgba(61, 220, 132, 0.06);
 }
 
 .popular-badge {
@@ -854,7 +1047,7 @@ body {
 
 .join-beta-content {
   text-align: center;
-  max-width: 700px;
+  max-width: 920px;
   margin: 0 auto;
 }
 
@@ -882,6 +1075,17 @@ body {
   margin-bottom: 1rem;
 }
 
+.join-free-pill {
+  margin: 0 auto 1rem;
+  padding: 0.65rem 0.9rem;
+  color: #86efac;
+  background: rgba(61, 220, 132, 0.14);
+  border: 1px solid rgba(61, 220, 132, 0.3);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
 .join-beta-content h3 {
   font-size: 1.75rem;
   font-weight: 700;
@@ -893,6 +1097,12 @@ body {
   font-size: 1.25rem;
   color: #d1d5db;
   margin-bottom: 2rem;
+}
+
+.join-beta-intro {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .join-beta-content>p {
@@ -989,16 +1199,142 @@ body {
 }
 
 .btn-android {
-  background: #2a2a3e;
-  color: #6b7280;
-  border: 1px solid #374151;
-  cursor: not-allowed;
-  opacity: 0.6;
+  background: #12333a;
+  color: white;
+  border: 1px solid rgba(61, 220, 132, 0.45);
 }
 
 .btn-android:hover {
-  transform: none;
-  box-shadow: none;
+  background: #17444a;
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 10px 30px rgba(61, 220, 132, 0.16);
+}
+
+.android-alpha-panel {
+  scroll-margin-top: 96px;
+  text-align: left;
+  background: rgba(3, 3, 48, 0.86);
+  border: 1px solid rgba(1, 178, 191, 0.24);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+}
+
+.alpha-panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.alpha-panel-header h3,
+.android-install-card h4,
+.alpha-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.alpha-panel-header p,
+.android-install-card p,
+.alpha-card p {
+  color: #d1d5db;
+}
+
+.alpha-status,
+.alpha-tag {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 9999px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.alpha-status {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(61, 220, 132, 0.14);
+  color: #86efac;
+  border: 1px solid rgba(61, 220, 132, 0.28);
+  font-size: 0.875rem;
+}
+
+.alpha-tag {
+  margin-bottom: 0.4rem;
+  padding: 0.35rem 0.55rem;
+  background: rgba(1, 178, 191, 0.16);
+  color: #67e8f9;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.alpha-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.alpha-card,
+.android-install-card {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+}
+
+.alpha-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.alpha-card>.btn,
+.install-actions .btn {
+  justify-content: center;
+}
+
+.alpha-card-recommended {
+  border-color: rgba(61, 220, 132, 0.38);
+  background: linear-gradient(135deg, rgba(61, 220, 132, 0.08), rgba(255, 255, 255, 0.045));
+}
+
+.alpha-card-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.alpha-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #01b2bf;
+  background: rgba(1, 178, 191, 0.13);
+  border-radius: 0.5rem;
+}
+
+.install-note {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.install-note {
+  color: #9ca3af;
+}
+
+.android-install-card {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.install-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 /* Footer */
@@ -1100,6 +1436,24 @@ body {
     gap: 1.5rem;
   }
 
+  .tester-free-banner {
+    padding: 2rem 1.25rem;
+  }
+
+  .tester-free-perks {
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: flex-start;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tester-free-cta {
+    width: 100%;
+    max-width: 320px;
+  }
+
   .footer-content {
     flex-direction: column;
     text-align: center;
@@ -1123,6 +1477,24 @@ body {
     width: 100%;
     max-width: 280px;
   }
+
+  .android-alpha-panel {
+    padding: 1.25rem;
+  }
+
+  .alpha-panel-header,
+  .alpha-card-heading {
+    gap: 1rem;
+  }
+
+  .alpha-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .install-actions .btn {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1143,8 +1515,26 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .tester-free-banner {
+    padding: 1.5rem 1rem;
+  }
+
+  .tester-free-banner strong {
+    font-size: 2.25rem;
+  }
+
+  .tester-free-tagline {
+    font-size: 0.9375rem;
+  }
+
   .hero-buttons {
     flex-direction: column;
+  }
+
+  .android-alpha-panel,
+  .alpha-card,
+  .android-install-card {
+    padding: 1rem;
   }
 }
 
